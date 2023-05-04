@@ -11,6 +11,11 @@ canvas.pack()
 board_size = 8
 square_size = width / board_size
 
+
+nigga penis
+
+
+
 # define colors of tiles and border
 tile_1_color = ('#c7baa8')
 tile_2_color = ('#565044')
