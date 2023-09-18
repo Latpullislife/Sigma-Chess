@@ -1,20 +1,16 @@
 import tkinter as tk
 import math
-import Const
-
-root = tk.Tk()
-canvas = tk.Canvas(root, width=Const.Width, height=Const.Height)
+from Const import*
+root =  tk.Tk()
+canvas = tk.Canvas(root, width=Width, height=Height)
 canvas.pack()
 
 # Define the size of the chessboard and the size of each square
-board_size = 8
-square_size = Const.Width / board_size
+square_size = Width / board_size
 
 # define colors of tiles and border
-tile_1_color = (Const.Primary_Colour)
-tile_2_color = (Const.Secondary_Colour)
-border_color = 'black'
-border_width = 5
+tile_1_color = (Primary_Colour)
+tile_2_color = (Secondary_Colour)
 
 # Draw the squares of the chessboard
 for row in range(board_size):
