@@ -3,14 +3,8 @@ import math
 from Const import*
 root =  tk.Tk()
 canvas = tk.Canvas(root, width=Width, height=Height)
+root.minsize(800, 800)
 canvas.pack()
-
-# Define the size of the chessboard and the size of each square
-square_size = Width / board_size
-
-# define colors of tiles and border
-tile_1_color = (Primary_Colour)
-tile_2_color = (Secondary_Colour)
 
 # Draw the squares of the chessboard
 for row in range(board_size):
