@@ -25,7 +25,7 @@ images = {
     'wp': tk.PhotoImage(file=pawn_white),
     'wr': tk.PhotoImage(file=rook_white),
     'wn': tk.PhotoImage(file=knight_white),
-    'wb': tk.PhotoImage(file_bishop_white),
+    'wb': tk.PhotoImage(file=bishop_white),
     'wq': tk.PhotoImage(file=queen_white),
     'wk': tk.PhotoImage(file=king_white),
     'bp': tk.PhotoImage(file=pawn_black),
