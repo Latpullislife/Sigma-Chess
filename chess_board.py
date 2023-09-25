@@ -1,6 +1,7 @@
 import tkinter as tk
 import math
 from Const import*
+from files import*
 root =  tk.Tk()
 canvas = tk.Canvas(root, width=Width, height=Height)
 root.minsize(800, 800)
@@ -21,18 +22,18 @@ for row in range(board_size):
 # Add images for chess pieces and scale them
 
 images = {
-    'wp': tk.PhotoImage(file='resources/pieces_basic/white/pawn.png'),
-    'wr': tk.PhotoImage(file='resources/pieces_basic/white/rook.png'),
-    'wn': tk.PhotoImage(file='resources/pieces_basic/white/knight.png'),
-    'wb': tk.PhotoImage(file='resources/pieces_basic/white/bishop.png'),
-    'wq': tk.PhotoImage(file='resources/pieces_basic/white/queen.png'),
-    'wk': tk.PhotoImage(file='resources/pieces_basic/white/king.png'),
-    'bp': tk.PhotoImage(file='resources/pieces_basic/black/pawn.png'),
-    'br': tk.PhotoImage(file='resources/pieces_basic/black/rook.png'),
-    'bn': tk.PhotoImage(file='resources/pieces_basic/black/knight.png'),
-    'bb': tk.PhotoImage(file='resources/pieces_basic/black/bishop.png'),
-    'bq': tk.PhotoImage(file='resources/pieces_basic/black/queen.png'),
-    'bk': tk.PhotoImage(file='resources/pieces_basic/black/king.png'),
+    'wp': tk.PhotoImage(file=pawn_white),
+    'wr': tk.PhotoImage(file=rook_white),
+    'wn': tk.PhotoImage(file=knight_white),
+    'wb': tk.PhotoImage(file_bishop_white),
+    'wq': tk.PhotoImage(file=queen_white),
+    'wk': tk.PhotoImage(file=king_white),
+    'bp': tk.PhotoImage(file=pawn_black),
+    'br': tk.PhotoImage(file=rook_black),
+    'bn': tk.PhotoImage(file=knight_black),
+    'bb': tk.PhotoImage(file=bishop_black),
+    'bq': tk.PhotoImage(file=queen_black),
+    'bk': tk.PhotoImage(file=king_black),
 }
 
 #Enlarge pieces to fit board:
