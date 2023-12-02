@@ -1,5 +1,5 @@
+import tkinter as tk
 # Screen
-
 Width = 800
 Height = 800
 
@@ -10,6 +10,12 @@ border_width = 5
 board_size = 8
 # Define the size of the chessboard and the size of each square
 square_size = Width / board_size
+
+# Tkinter
+root =  tk.Tk()
+canvas = tk.Canvas(root, width=Width, height=Height)
+root.minsize(800, 800)
+canvas.pack()
 
 # Colours
 
